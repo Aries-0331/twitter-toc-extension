@@ -1,0 +1,172 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f9f9;
+  --text-primary: #0f1419;
+  --text-secondary: #536471;
+  --border-color: #eff3f4;
+  --accent-color: #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --hover-bg: #f7f9f9;
+  --success-color: #00ba7c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #15202b;
+    --bg-secondary: #192734;
+    --text-primary: #ffffff;
+    --text-secondary: #8b98a5;
+    --border-color: #38444d;
+    --accent-color: #1d9bf0;
+    --accent-hover: #1a8cd8;
+    --hover-bg: #273340;
+    --success-color: #00ba7c;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main {
+  margin-bottom: 24px;
+}
+
+.settings-section {
+  margin-bottom: 32px;
+}
+
+.settings-section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.setting-item {
+  margin-bottom: 16px;
+}
+
+.setting-item label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.setting-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.setting-item span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.description {
+  margin-top: 4px;
+  margin-left: 32px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.license-box {
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.license-status {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 8px;
+}
+
+.license-description {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.about-info {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.about-info p {
+  margin-bottom: 8px;
+}
+
+footer {
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary.saved {
+  background: var(--success-color);
+}

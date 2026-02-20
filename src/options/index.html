@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter TOC - Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Twitter TOC Settings</h1>
+    </header>
+
+    <main>
+      <section class="settings-section">
+        <h2>General</h2>
+
+        <div class="setting-item">
+          <label for="autoDetect">
+            <input type="checkbox" id="autoDetect" checked>
+            <span>Auto-detect long-form articles</span>
+          </label>
+          <p class="description">Automatically show TOC when visiting long-form articles</p>
+        </div>
+
+        <div class="setting-item">
+          <label for="showInPopup">
+            <input type="checkbox" id="showInPopup" checked>
+            <span>Show TOC on icon click</span>
+          </label>
+          <p class="description">Open TOC panel when clicking the extension icon</p>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Appearance</h2>
+
+        <div class="setting-item">
+          <label for="highlightCurrent">
+            <input type="checkbox" id="highlightCurrent" checked>
+            <span>Highlight current section</span>
+          </label>
+          <p class="description">Highlight the section while scrolling</p>
+        </div>
+
+        <div class="setting-item">
+          <label for="smoothScroll">
+            <input type="checkbox" id="smoothScroll" checked>
+            <span>Smooth scrolling</span>
+          </label>
+          <p class="description">Use smooth scrolling when clicking TOC items</p>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>Account</h2>
+
+        <div class="license-box">
+          <p class="license-status">Free Plan</p>
+          <p class="license-description">You are currently on the free plan</p>
+          <button class="btn-primary" id="upgradeBtn">Upgrade to Pro</button>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <h2>About</h2>
+        <div class="about-info">
+          <p>Version: <span id="version">1.0.0</span></p>
+          <p>Twitter TOC - Table of Contents for Twitter Articles</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <button class="btn-secondary" id="saveBtn">Save Settings</button>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "twitter-toc-extension",
+  "description": "JavaScript-based extension with a sidebar panel. Adds a sidebar with a simple page.",
+  "version": "3.0.0",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Your Name",
+    "email": "your@email.com",
+    "url": "https://yourwebsite.com"
+  },
+  "scripts": {
+    "dev": "extension dev",
+    "start": "extension start",
+    "build": "extension build",
+    "build:firefox": "extension build --browser firefox",
+    "build:edge": "extension build --browser edge"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "extension": "^3.7.0"
+  },
+  "packageManager": "npm@10.8.2"
+}
