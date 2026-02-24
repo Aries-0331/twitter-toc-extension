@@ -208,7 +208,6 @@ function extractTOC() {
   // First, try to find the article title using data-testid="twitter-article-title"
   let titleText = null;
   let titleElement = document.querySelector('[data-testid="twitter-article-title"]');
-  console.log('title ele:', titleElement);
 
   // If not found, try h1 outside of nav/header/footer
   if (!titleElement) {
@@ -312,7 +311,6 @@ async function init() {
   // Wait for page to fully load
   setTimeout(() => {
     tocData = extractTOC();
-    console.log('Twitter TOC: Found', tocData.length, 'headers');
   }, 1500);
 
   // Initialize TOC Panel
@@ -379,6 +377,5 @@ export default function main() {
     if (tocPanel) {
       tocPanel.destroy();
     }
-    console.log('Twitter TOC content script unloaded');
   };
 }

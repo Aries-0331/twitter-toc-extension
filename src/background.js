@@ -20,5 +20,3 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
     chrome.action.openPopup();
   }
 });
-
-console.log('Twitter TOC extension loaded');

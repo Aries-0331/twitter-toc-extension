@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       renderEmpty('No table of contents found. Make sure you are on a long-form article.');
     }
   } catch (error) {
-    console.error('Failed to get TOC:', error);
     renderEmpty('Unable to get TOC. Please refresh the page and try again.');
   }
 
