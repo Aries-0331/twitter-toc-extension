@@ -2,38 +2,35 @@
   "$schema": "https://json.schemastore.org/chrome-manifest.json",
   "chromium:manifest_version": 3,
   "firefox:manifest_version": 2,
-  "version": "1.0.0",
-  "name": "Twitter TOC",
-  "description": "Twitter Article Table of Contents - Navigate long-form Twitter articles with an interactive table of contents",
+  "version": "0.1.0",
+  "name": "X & Twitter Article TOC",
+  "description": "Navigate X.com and Twitter.com long-form articles with an interactive table of contents. Easily jump to any section, improve reading experience on X/Twitter articles. Free browser extension.",
   "icons": {
-    "16": "images/icon.png",
-    "32": "images/icon.png",
-    "48": "images/icon.png",
-    "64": "images/icon.png",
-    "128": "images/icon.png"
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
   },
   "chromium:action": {
     "default_icon": {
-      "16": "images/icon.png",
-      "32": "images/icon.png",
-      "48": "images/icon.png",
-      "64": "images/icon.png",
-      "128": "images/icon.png"
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
     },
     "default_popup": "popup/index.html",
-    "default_title": "Twitter TOC"
+    "default_title": "X & Twitter Article TOC"
   },
   "chromium:options_page": "options/index.html",
   "firefox:browser_action": {
     "default_icon": {
-      "16": "images/icon.png",
-      "32": "images/icon.png",
-      "48": "images/icon.png",
-      "64": "images/icon.png",
-      "128": "images/icon.png"
+      "16": "logo.png",
+      "32": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
     },
     "default_popup": "popup/index.html",
-    "default_title": "Twitter TOC"
+    "default_title": "X & Twitter Article TOC"
   },
   "chromium:permissions": [
     "contextMenus",
@@ -66,5 +63,5 @@
       "run_at": "document_idle"
     }
   ],
-  "author": "Your Name"
+  "author": "Aries"
 }

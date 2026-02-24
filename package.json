@@ -1,14 +1,14 @@
 {
   "private": true,
   "name": "twitter-toc-extension",
-  "description": "JavaScript-based extension with a sidebar panel. Adds a sidebar with a simple page.",
-  "version": "3.0.0",
+  "description": "Navigate X.com and Twitter.com long-form articles with an interactive table of contents",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "author": {
-    "name": "Your Name",
-    "email": "your@email.com",
-    "url": "https://yourwebsite.com"
+    "name": "Aries",
+    "email": "aries0331.dev@email.com",
+    "url": "https://arieszhou.cn"
   },
   "scripts": {
     "dev": "extension dev",
