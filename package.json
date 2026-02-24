@@ -14,6 +14,7 @@
     "dev": "extension dev",
     "start": "extension start",
     "build": "extension build",
+    "build:zip": "npm run build && cd dist/chromium && zip -r ../../twitter-toc-extension-v$npm_package_version.zip .",
     "build:firefox": "extension build --browser firefox",
     "build:edge": "extension build --browser edge"
   },
