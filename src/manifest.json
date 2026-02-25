@@ -4,7 +4,7 @@
   "firefox:manifest_version": 2,
   "version": "0.1.0",
   "name": "X & Twitter Article TOC",
-  "description": "Navigate X.com and Twitter.com long-form articles with an interactive table of contents. Easily jump to any section, improve reading experience on X/Twitter articles. Free browser extension.",
+  "description": "Navigate X/Twitter long-form articles with an interactive table of contents. Jump to any section easily.",
   "icons": {
     "16": "logo.png",
     "32": "logo.png",
