@@ -4,7 +4,7 @@ A browser extension that adds an interactive table of contents to X.com and Twit
 
 [![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/ariesZ/twitter-toc-extension)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Web%20Store-0.1.0-orange)](https://chrome.google.com/webstore)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/size/nbdgpckkcfkomnmdefinikjijgljgjfp)](https://chromewebstore.google.com/detail/nbdgpckkcfkomnmdefinikjijgljgjfp?utm_source=item-share-cb)
 
 ## Features
 
@@ -21,7 +21,7 @@ A browser extension that adds an interactive table of contents to X.com and Twit
 
 ```bash
 # Clone the repository
-git clone https://github.com/ariesZ/twitter-toc-extension.git
+git clone https://github.com/Aries-0331/twitter-toc-extension.git
 cd twitter-toc-extension
 
 # Install dependencies
