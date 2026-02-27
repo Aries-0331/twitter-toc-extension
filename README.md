@@ -2,7 +2,7 @@
 
 A browser extension that adds an interactive table of contents to X.com and Twitter long-form articles. Navigate easily through articles with a floating panel, drag-to-move functionality, and position persistence.
 
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/ariesZ/twitter-toc-extension)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue)](https://github.com/ariesZ/twitter-toc-extension)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/size/nbdgpckkcfkomnmdefinikjijgljgjfp)](https://chromewebstore.google.com/detail/nbdgpckkcfkomnmdefinikjijgljgjfp?utm_source=item-share-cb)
 
