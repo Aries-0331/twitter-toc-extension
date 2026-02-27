@@ -194,16 +194,28 @@ class TOCPanel {
   }
 }
 
+// Get heading level from element (handles Twitter/X custom classes)
+function getHeaderLevel(header) {
+  if (header.classList.contains('longform-header-one')) return 2;
+  if (header.classList.contains('longform-header-two')) return 3;
+  if (header.classList.contains('longform-header-three')) return 4;
+  // Fallback for standard h2-h6
+  return parseInt(header.tagName.charAt(1));
+}
+
 // Extract headers from the article
 function extractTOC() {
   const article = document.querySelector('article');
 
   if (!article) {
+    console.log('[TOC] No article element found');
     return [];
   }
 
   const toc = [];
   headerElements = [];
+
+  console.log('[TOC] Article found, extracting headers...');
 
   // First, try to find the article title using data-testid="twitter-article-title"
   let titleText = null;
@@ -244,7 +256,8 @@ function extractTOC() {
   }
 
   // Get all other headers (h2-h6) from the article
-  const headers = article.querySelectorAll('h2, h3, h4, h5, h6');
+  const headers = article.querySelectorAll('.longform-header-one, .longform-header-two, .longform-header-three, h2, h3, h4, h5, h6');
+  console.log(`[TOC] Found ${headers.length} headers`);
 
   headers.forEach((header, index) => {
     if (header.closest('nav') || header.closest('footer') || header.closest('header')) {
@@ -261,7 +274,7 @@ function extractTOC() {
       return;
     }
 
-    const level = parseInt(header.tagName.charAt(1));
+    const level = getHeaderLevel(header);
     const id = `toc-header-${index}`;
 
     headerElements.push({
@@ -278,6 +291,7 @@ function extractTOC() {
     });
   });
 
+  console.log('[TOC] Extracted TOC:', toc);
   return toc;
 }
 
