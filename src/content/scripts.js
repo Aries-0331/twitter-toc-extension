@@ -203,12 +203,29 @@ function getHeaderLevel(header) {
   return parseInt(header.tagName.charAt(1));
 }
 
+// Find the article container (handles both regular tweet and fullscreen article views)
+function findArticleContainer() {
+  // Try regular tweet article first
+  let container = document.querySelector('article');
+  if (container) return container;
+
+  // Try fullscreen article view: data-testid="twitterArticleReadView"
+  container = document.querySelector('[data-testid="twitterArticleReadView"]');
+  if (container) return container;
+
+  // Try main element as last resort
+  container = document.querySelector('main[role="main"]');
+  if (container) return container;
+
+  return null;
+}
+
 // Extract headers from the article
 function extractTOC() {
-  const article = document.querySelector('article');
+  const article = findArticleContainer();
 
   if (!article) {
-    console.log('[TOC] No article element found');
+    console.log('[TOC] No article container found');
     return [];
   }
 
